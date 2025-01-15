@@ -1,0 +1,16 @@
+com/github/dannful/AniLexa/domain/model/NextAiringEpisode.class
+com/github/dannful/AniLexa/handlers/HelpIntentHandler.class
+com/github/dannful/AniLexa/AniLexaStreamHandler.class
+com/github/dannful/AniLexa/data/repository/AniListRepository.class
+com/github/dannful/AniLexa/domain/model/Media.class
+com/github/dannful/AniLexa/utils/ClassSerializer.class
+com/github/dannful/AniLexa/data/repository/AniListRepository$KeyValuePair.class
+com/github/dannful/AniLexa/handlers/SessionEndedRequestHandler.class
+com/github/dannful/AniLexa/handlers/CancelandStopIntentHandler.class
+com/github/dannful/AniLexa/domain/model/MediaListStatus.class
+com/github/dannful/AniLexa/domain/model/MediaList.class
+com/github/dannful/AniLexa/domain/repository/AnimeRepository.class
+com/github/dannful/AniLexa/handlers/LaunchRequestHandler.class
+com/github/dannful/AniLexa/handlers/FallbackIntentHandler.class
+com/github/dannful/AniLexa/Constants.class
+com/github/dannful/AniLexa/handlers/UpdateMediaListIntent.class

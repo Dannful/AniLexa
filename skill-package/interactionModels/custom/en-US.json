@@ -1,0 +1,114 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "UpdateMediaListIntent",
+          "samples": ["update a show", "update an anime", "update {Title}"],
+          "slots": [
+            {
+              "name": "Title",
+              "type": "AMAZON.SearchQuery",
+              "samples": ["update {Title}"]
+            },
+            {
+              "name": "Progress",
+              "type": "AMAZON.NUMBER",
+              "samples": ["set progress to {Progress}", "{Progress}"]
+            },
+            {
+              "name": "Score",
+              "type": "AMAZON.NUMBER",
+              "samples": ["set score to {Score}", "{Score}"]
+            }
+          ]
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        }
+      ],
+      "invocationName": "anime list"
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "UpdateMediaListIntent",
+          "confirmationRequired": false,
+          "elicitationRequired": true,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "Title",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Intent-UpdateMediaListIntent.IntentSlot-Title"
+              }
+            },
+            {
+              "name": "Progress",
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Intent-UpdateMediaListIntent.IntentSlot-Progress"
+              }
+            },
+            {
+              "name": "Score",
+              "type": "AMAZON.NUMBER",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Intent-UpdateMediaListIntent.IntentSlot-Score"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "prompts": [
+      {
+        "id": "Elicit.Intent-UpdateMediaListIntent.IntentSlot-Title",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What's the title of the anime?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Intent-UpdateMediaListIntent.IntentSlot-Progress",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "How many episodes have you watched?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Intent-UpdateMediaListIntent.IntentSlot-Score",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What score would you like to give to the show?"
+          }
+        ]
+      }
+    ]
+  }
+}

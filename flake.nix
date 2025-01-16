@@ -16,7 +16,7 @@
         };
       in {
         devShells.default = pkgs.mkShell {
-          packages = with pkgs; [ corretto21 nodejs jetbrains.idea-ultimate ];
+          packages = with pkgs; [ corretto21 nodejs ];
           buildInputs = with pkgs; [ maven jdt-language-server ];
         };
       });

@@ -10,6 +10,7 @@ com/github/dannful/AniLexa/handlers/CancelandStopIntentHandler.class
 com/github/dannful/AniLexa/domain/model/MediaListStatus.class
 com/github/dannful/AniLexa/domain/model/MediaList.class
 com/github/dannful/AniLexa/domain/repository/AnimeRepository.class
+com/github/dannful/AniLexa/handlers/MediaSearchIntentHandler.class
 com/github/dannful/AniLexa/handlers/LaunchRequestHandler.class
 com/github/dannful/AniLexa/handlers/FallbackIntentHandler.class
 com/github/dannful/AniLexa/Constants.class

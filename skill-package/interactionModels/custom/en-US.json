@@ -16,7 +16,7 @@
         },
         {
           "name": "UpdateMediaListIntent",
-          "samples": ["update a show", "update an anime", "update {Title}"],
+          "samples": ["update {Title}"],
           "slots": [
             {
               "name": "Title",
@@ -36,19 +36,34 @@
           ]
         },
         {
+          "name": "MediaSearchIntent",
+          "samples": [
+            "search an anime",
+            "search a show",
+            "i would like to know about {Title}",
+            "i wanna know about {Title}",
+            "tell me about {Title}"
+          ],
+          "slots": [
+            {
+              "name": "Title",
+              "type": "AMAZON.SearchQuery",
+              "samples": ["{Title}"]
+            }
+          ]
+        },
+        {
           "name": "AMAZON.FallbackIntent",
           "samples": []
         }
       ],
-      "invocationName": "anime list"
+      "invocationName": "japanese shows list"
     },
     "dialog": {
       "intents": [
         {
           "name": "UpdateMediaListIntent",
           "confirmationRequired": false,
-          "elicitationRequired": true,
-          "prompts": {},
           "slots": [
             {
               "name": "Title",
@@ -75,6 +90,22 @@
               "elicitationRequired": true,
               "prompts": {
                 "elicitation": "Elicit.Intent-UpdateMediaListIntent.IntentSlot-Score"
+              }
+            }
+          ]
+        },
+        {
+          "name": "MediaSearchIntent",
+          "confirmationRequired": false,
+          "delegationStrategy": "ALWAYS",
+          "slots": [
+            {
+              "name": "Title",
+              "type": "AMAZON.SearchQuery",
+              "confirmationRequired": false,
+              "elicitationRequired": true,
+              "prompts": {
+                "elicitation": "Elicit.Intent-MediaSearchIntent.IntentSlot-Title"
               }
             }
           ]
@@ -106,6 +137,15 @@
           {
             "type": "PlainText",
             "value": "What score would you like to give to the show?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Intent-MediaSearchIntent.IntentSlot-Title",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "What's the name of the show?"
           }
         ]
       }

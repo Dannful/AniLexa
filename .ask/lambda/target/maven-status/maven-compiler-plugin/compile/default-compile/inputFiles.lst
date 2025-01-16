@@ -1,4 +1,5 @@
 /home/dannly/.git/AniLexa/.ask/lambda/src/com/github/dannful/AniLexa/data/repository/AniListRepository.java
+/home/dannly/.git/AniLexa/.ask/lambda/src/com/github/dannful/AniLexa/handlers/MediaSearchIntentHandler.java
 /home/dannly/.git/AniLexa/.ask/lambda/src/com/github/dannful/AniLexa/handlers/HelpIntentHandler.java
 /home/dannly/.git/AniLexa/.ask/lambda/src/com/github/dannful/AniLexa/handlers/FallbackIntentHandler.java
 /home/dannly/.git/AniLexa/.ask/lambda/src/com/github/dannful/AniLexa/utils/ClassSerializer.java

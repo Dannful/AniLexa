@@ -1,0 +1,5 @@
+node/lambda/dist
+node/lambda/node_modules
+node/lambda/tsconfig.tsbuildinfo
+node/.ask/lambda/dist
+java/.ask/lambda

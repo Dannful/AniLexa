@@ -1,0 +1,27 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Connects with AniList",
+          "examplePhrases": [
+            "Alexa open my anime list"
+          ],
+          "name": "AniLexa",
+          "description": "Connects to AniList in order to manage one's anime list"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:sa-east-1:339712956673:function:ask-anilexa-default-default-1737336710641"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

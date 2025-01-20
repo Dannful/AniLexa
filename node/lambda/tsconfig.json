@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "rootDir": "./src",
+    "target": "ES2021",
+    "outDir": "./dist",
+    "lib": ["DOM", "ES2021"],
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "Node10",
+    "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "noImplicitAny": false
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

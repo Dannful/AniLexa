@@ -1,0 +1,26 @@
+{
+  "name": "anilexa",
+  "version": "1.0.0",
+  "description": "amazon alexa skill for managing anime lists",
+  "main": "index.js",
+  "scripts": {
+    "build": "graphql-codegen && tsc && cp package.json dist/",
+    "compile": "graphql-codegen",
+    "start": "ts-node src/index.ts"
+  },
+  "author": "Dannful",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/client": "^3.12.6",
+    "ask-sdk-core": "^2.14.0",
+    "ask-sdk-model": "^1.79.0",
+    "aws-sdk": "^2.1414.0",
+    "graphql": "^16.10.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.3",
+    "@graphql-codegen/client-preset": "^4.5.1",
+    "@graphql-typed-document-node/core": "^3.2.0",
+    "typescript": "^5.7.3"
+  }
+}
